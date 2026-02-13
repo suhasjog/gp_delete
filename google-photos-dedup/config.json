@@ -1,0 +1,10 @@
+{
+  "similarity_threshold": 6,
+  "scan_batch_size": 100,
+  "thumbnail_size": 256,
+  "max_concurrent_downloads": 10,
+  "keep_strategy": "oldest",
+  "data_dir": "data",
+  "report_path": "report.html",
+  "scopes": ["https://www.googleapis.com/auth/photoslibrary.readonly"]
+}

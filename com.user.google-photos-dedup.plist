@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.google-photos-dedup</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- UPDATE THIS PATH to your Python installation -->
+        <string>/usr/local/bin/python3</string>
+        <string>dedup.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <!-- UPDATE THIS PATH to where you placed the project -->
+    <string>/Users/YOUR_USERNAME/google-photos-dedup</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <!-- Runs every Sunday at 2:00 AM -->
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/google-photos-dedup.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/google-photos-dedup.err</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
